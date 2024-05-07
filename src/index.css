@@ -1,20 +1,17 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-*{
-box-sizing:  border-box;
-color: white;
+* {
+  box-sizing: border-box;
+  color: white;
 }
 
-@layer utilities{
-   @variants responsive {
-    .container{
-        max-width: 80%;
-        margin-inline:auto
+@layer utilities {
+  @variants responsive {
+    .container {
+      max-width: 80%;
+      margin-inline: auto;
     }
-}
-
-   
+  }
 }

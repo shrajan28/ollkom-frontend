@@ -212,8 +212,8 @@ const Home: React.FC<HomeProps> = ({ title }) => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col py-16   md:flex-row items-center bg-gradient-to-b from-dark-blue to-[#13376E] justify-between ">
-        <div className="max-w-[82%] mx-auto flex flex-col items-center gap-16">
+      <div className="flex flex-col py-16    md:flex-row items-center bg-gradient-to-b from-dark-blue to-[#13376E] justify-between ">
+        <div className="max-w-[82%] mx-auto mb-16 flex flex-col items-center gap-16">
           <span className="font-semibold text-[40px]">
             Frequently asked questions
           </span>
