@@ -23,7 +23,7 @@ const Subscription: React.FC<SubscriptionProps> = ({ title }) => {
   const [arrow3, setArrow3] = useState(false);
 
   return (
-    <div className="">
+    <div className="!text-black">
       <div className="space-y-8">
         <div className="bg-gradient-to-b from-dark-blue via-light-blue to-white ">
           <div className=" p-6 sm:p-10 lg:p-16 max-w-5xl mx-auto">

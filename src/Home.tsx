@@ -24,8 +24,8 @@ type HomeProps = {
 
 const Home: React.FC<HomeProps> = ({ title }) => {
   return (
-    <>
-      <div className="flex flex-col bg-gradient-to-b py-16   from-dark-blue to-light-blue md:flex-row items-center justify-around  ">
+    <div className="[&>*]:text-white">
+      <div className="flex flex-col bg-gradient-to-b py-16    from-dark-blue to-light-blue md:flex-row items-center justify-around  ">
         <div className="max-w-[82%] mx-auto flex items-center gap-[68px]">
           <div className="flex justify-start  ">
             <div className="flex flex-col gap-7">
@@ -48,7 +48,7 @@ const Home: React.FC<HomeProps> = ({ title }) => {
           <img src={homeBasic.default}></img>
         </div>
       </div>
-      <div className="   bg-light-blue  mx-auto ">
+      <div className="  [&>*]:text-white bg-light-blue  mx-auto ">
         <div className="max-w-[82%] mx-auto pb-16 border-b border-[#8899A8]">
           <div className=" flex gap-3 justify-between">
             <div className="text-3xl font-bold">LOGO </div>
@@ -237,7 +237,7 @@ const Home: React.FC<HomeProps> = ({ title }) => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

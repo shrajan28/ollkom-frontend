@@ -33,7 +33,7 @@ const Footer: React.FC<FooterProps> = ({ title }) => {
           </div>
         </div>
       </div>
-      <div className=" bg-dark-blue ">
+      <div className=" bg-dark-blue [&>*]:text-white ">
         <div className="max-w-[82%] w-full py-[119px] mx-auto  flex gap-20 ">
           <div className="flex flex-col gap-5">
             <img src={logo} width={170} className=" object-contain"></img>
