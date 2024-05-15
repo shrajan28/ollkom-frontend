@@ -11,7 +11,7 @@ function Input({
 }) {
   return (
     <input
-      className="px-5 py-[13px] border-[#DFE4EA] border"
+      className="px-5 py-[13px] w-full rounded-[6px] focus-visible:outline-[#1562D6]  border-[#DFE4EA] border"
       placeholder={placeholder}
       onChange={onChange}
       type={type}

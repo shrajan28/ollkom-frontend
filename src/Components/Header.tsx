@@ -9,7 +9,7 @@ type HeaderProps = {
   title: string;
 };
 
-const selectedMenuClass = "rounded-full border border-blue-700 ";
+const selectedMenuClass = "rounded-full px-4 py-2 border border-blue-700 ";
 
 const Header: React.FC<HeaderProps> = ({ title }) => {
   const currentPath = useCurrentPath();
@@ -29,18 +29,16 @@ const Header: React.FC<HeaderProps> = ({ title }) => {
         </div>
       </div>
       <div className="max-w-[82%] py-6 mx-auto  flex justify-between items-center   ">
-        <div className="flex items-center gap-8 font-[500] text-white ">
+        <div className="flex items-center gap-6 font-[500] text-white ">
           <Link
             to={"/"}
-            className={`px-4 py-2 ${
-              currentPath == "/" ? selectedMenuClass : ""
-            } `}
+            className={` ${currentPath == "/" ? selectedMenuClass : ""} `}
           >
             Home
           </Link>
           <Link
             to={"/themes"}
-            className={`px-4 py-2 ${
+            className={` ${
               currentPath?.includes("/themes") ? selectedMenuClass : ""
             } `}
           >
@@ -49,7 +47,7 @@ const Header: React.FC<HeaderProps> = ({ title }) => {
           </Link>
           <Link
             to={"/subscription"}
-            className={`px-4 py-2 ${
+            className={` ${
               currentPath?.includes("/subscription") ? selectedMenuClass : ""
             } `}
           >

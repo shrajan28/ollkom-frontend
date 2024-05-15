@@ -5,6 +5,8 @@ import ThemeListing from "./Components/ThemeListing";
 import ThemeDetail from "./Components/ThemeDetail";
 import Layout from "./Components/Layout";
 import Missing from "./Components/Missing";
+import Login from "./Components/Login";
+import Register from "./Components/Register";
 
 function AppRouter() {
   return (
@@ -18,7 +20,8 @@ function AppRouter() {
         ></Route>
         <Route path="/themes" element={<ThemeListing />} />
         <Route path="/themedetail/:id" element={<ThemeDetail />}></Route>
-
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
         {/* catch all */}
         <Route path="*" element={<Missing />} />
       </Route>
