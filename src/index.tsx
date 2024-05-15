@@ -5,7 +5,7 @@ import reportWebVitals from "./reportWebVitals";
 import AppRouter from "./AppRouter";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 import { AuthProvider } from "./context/AuthProvider";
 
 const root = ReactDOM.createRoot(
@@ -13,7 +13,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <AuthProvider>
         <Header title="" />
         <Routes>
@@ -21,7 +21,7 @@ root.render(
         </Routes>
         <Footer title="" />
       </AuthProvider>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
 
