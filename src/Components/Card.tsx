@@ -17,7 +17,7 @@ const Card: React.FC<CardProps> = ({
     <div className=" rounded-[20px] bg-gradient-to-b from-[#111928] to-[#1562D6]">
       <div
         className={` rounded-[20px] m-[1px] overflow-hidden flex flex-col gap-[14px] border-1  border-[linear-gradient(180deg, #111928 0%, #1562D6 100%)]  p-10  shadow-[0_5px_12px_0_rgba(0,0,0,0.1)]
-      bg-dark-blue ${className}`}
+      bg-dark-blue hover:bg-white hover:text-[#111928] transition-all duration-300 ${className}`}
       >
         <div className="bg-blue-600 mb-4 p-[10px] w-min rounded-xl justify-items-center">
           {icon}

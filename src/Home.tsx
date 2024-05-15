@@ -18,6 +18,7 @@ import BulletPoint from "./Components/BulletPoint";
 import * as users from "../src/assets/users.png";
 import * as video from "../src/assets/video.png";
 import Accordion from "./Components/Accordion";
+import Partition from "./Components/Partition";
 type HomeProps = {
   title: string;
 };
@@ -167,28 +168,28 @@ const Home: React.FC<HomeProps> = ({ title }) => {
               </p>
               <div className="grid grid-cols-2 py-[30px] gap-x-4 gap-y-[80px]">
                 <div className="flex gap-6">
-                  <div className="w-[4px] bg-gradient-to-b from-[#1A68DD] to-[#9EACC6]"></div>
+                  <Partition />{" "}
                   <div className="flex flex-col gap-[6px]">
                     <span className="font-semibold text-[28px]">Millions</span>
                     <span className="text-lg">of merchants worldwide</span>
                   </div>
                 </div>
                 <div className="flex gap-6">
-                  <div className="w-[4px] bg-gradient-to-b from-[#1A68DD] to-[#9EACC6]"></div>
+                  <Partition />{" "}
                   <div className="flex flex-col gap-[6px]">
                     <span className="font-semibold text-[28px]">170+</span>
                     <span className="text-lg">countries represented</span>
                   </div>
                 </div>{" "}
                 <div className="flex gap-6">
-                  <div className="w-[4px] bg-gradient-to-b from-[#1A68DD] to-[#9EACC6]"></div>
+                  <Partition />{" "}
                   <div className="flex flex-col gap-[6px]">
                     <span className="font-semibold text-[28px]">10%</span>
                     <span className="text-lg">of total GCC ecommerce</span>
                   </div>
                 </div>{" "}
                 <div className="flex gap-6">
-                  <div className="w-[4px] bg-gradient-to-b from-[#1A68DD] to-[#9EACC6]"></div>
+                  <Partition />{" "}
                   <div className="flex flex-col gap-[6px]">
                     <span className="font-semibold text-[28px]">$444B</span>
                     <span className="text-lg">global economic activity</span>

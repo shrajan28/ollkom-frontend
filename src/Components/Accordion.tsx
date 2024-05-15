@@ -22,7 +22,7 @@ function Accordion({
       onClick={toggle}
       className=" group rounded-[20px] bg-gradient-to-b  from-[#111928] to-[#1562D6]"
     >
-      <div className="flex p-10 rounded-[20px] m-[1px] max-h-[105px]   overflow-hidden group-data-[expanded=true]:max-h-[177px]  gap-6 bg-dark-blue group-data-[expanded=true]:bg-white transition-all duration-500">
+      <div className="flex p-10 rounded-[20px] m-[1px] max-h-[105px]   overflow-hidden group-data-[expanded=true]:max-h-[177px]  gap-6 bg-dark-blue hover:bg-white hover:text-[#111928]  group-data-[expanded=true]:bg-white transition-all duration-500">
         <div className="bg-[#D0E0F7]  rounded-[10px] p-1 h-min">
           <ChevronDownIcon className=" fill-[#1562D6] h-[22px] w-[22px]  group-data-[expanded=true]:rotate-180 transition-all" />
         </div>
