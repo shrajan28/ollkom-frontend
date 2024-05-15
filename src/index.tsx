@@ -5,15 +5,20 @@ import reportWebVitals from "./reportWebVitals";
 import AppRouter from "./AppRouter";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
-import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter,
+  HashRouter,
+  Route,
+  RouterProvider,
+  Routes,
+  createHashRouter,
+} from "react-router-dom";
 import { AuthProvider } from "./context/AuthProvider";
 
-const root = ReactDOM.createRoot(
-  document.getElementById("root") as HTMLElement
-);
-root.render(
-  <React.StrictMode>
-    <HashRouter>
+const router = createHashRouter([
+  {
+    path: "/*",
+    element: (
       <AuthProvider>
         <Header title="" />
         <Routes>
@@ -21,7 +26,15 @@ root.render(
         </Routes>
         <Footer title="" />
       </AuthProvider>
-    </HashRouter>
+    ),
+  },
+]);
+const root = ReactDOM.createRoot(
+  document.getElementById("root") as HTMLElement
+);
+root.render(
+  <React.StrictMode>
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
