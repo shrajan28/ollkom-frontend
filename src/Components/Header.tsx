@@ -56,7 +56,9 @@ const Header: React.FC<HeaderProps> = ({ title }) => {
         </div>
         <img src={logo}></img>
         <div className="flex  items-center gap-6">
-          <span className=" flex font-[500]">Sign In</span>
+          <Link className=" flex font-[500]" to={"/login"}>
+            Sign In
+          </Link>
           <Button title={"Start Free Trial"} />
         </div>
       </div>

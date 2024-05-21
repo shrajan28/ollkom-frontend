@@ -55,7 +55,17 @@ const productList = [
     tags: ["Store Locator", "Store Locator", "Locator", "Event Calender"],
   },
 ];
-function ProductListing() {
+function ProductListing({
+  productList,
+  setCurrentPage,
+  totalPages,
+  currentPage,
+}: {
+  productList: any;
+  setCurrentPage: any;
+  totalPages: number;
+  currentPage: number;
+}) {
   return (
     <>
       <h2 className="text-5xl mx-auto text-[#111928] font-bold text-center">
@@ -82,12 +92,12 @@ function ProductListing() {
         </select>
       </div>
       <div className="grid grid-cols-3 gap-x-[30px] gap-y-12">
-        {productList.map((product) => {
+        {productList.map((product: any) => {
           return (
             <ProductCard
               id={product.id}
-              productImageUrl={product.productImageUrl}
-              title={product.title}
+              productImageUrl={product.thumbnail}
+              title={product.name}
               price={product.price}
               tags={product.tags}
             />
@@ -96,9 +106,9 @@ function ProductListing() {
       </div>
       <ResponsivePagination
         maxWidth={378}
-        current={0}
-        total={12}
-        onPageChange={() => {}}
+        current={currentPage}
+        total={totalPages}
+        onPageChange={(page) => setCurrentPage(page)}
       />
     </>
   );

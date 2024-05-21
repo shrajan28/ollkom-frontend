@@ -19,7 +19,12 @@ function ProductCard({
       to={`/themedetail/${id}`}
       className="text-[#111928] shadow-[0px_5px_12px_0px_#0000001A] "
     >
-      <img src={productImageUrl} width={370} height={426}></img>
+      <img
+        src={productImageUrl}
+        className="object-cover max-h-[426px]"
+        width={370}
+        height={426}
+      ></img>
       <div className="p-4 font-semibold">
         <div className="flex justify-between">
           <span className="">{title}</span>

@@ -6,12 +6,12 @@ import AppRouter from "./AppRouter";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import {
-  BrowserRouter,
-  HashRouter,
   Route,
   RouterProvider,
   Routes,
+  createBrowserRouter,
   createHashRouter,
+  createRoutesFromElements,
 } from "react-router-dom";
 import { AuthProvider } from "./context/AuthProvider";
 
