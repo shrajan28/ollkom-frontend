@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/ollkom-frontend/static/css/main.70d4dee5.css",
+    "main.js": "/ollkom-frontend/static/js/main.51805ef6.js",
+    "static/js/453.b8e4c7f6.chunk.js": "/ollkom-frontend/static/js/453.b8e4c7f6.chunk.js",
+    "static/media/video.png": "/ollkom-frontend/static/media/video.6cba68025bc217c93cd4.png",
+    "static/media/users.png": "/ollkom-frontend/static/media/users.56bf1ca05849e9bd42a9.png",
+    "static/media/alhome.png": "/ollkom-frontend/static/media/alhome.07650bf00049b05e6a16.png",
+    "static/media/funnelImg.png": "/ollkom-frontend/static/media/funnelImg.d560acd2518b9126496b.png",
+    "static/media/backoffice.png": "/ollkom-frontend/static/media/backoffice.131aacfe979d7b7a7ff4.png",
+    "static/media/theme1.png": "/ollkom-frontend/static/media/theme1.e406e7218d53d9dce2fb.png",
+    "static/media/themeHero.png": "/ollkom-frontend/static/media/themeHero.d455752350f8a7e1a2d2.png",
+    "static/media/theme2.png": "/ollkom-frontend/static/media/theme2.9e19c31603e1d60444b3.png",
+    "static/media/home-primary.png": "/ollkom-frontend/static/media/home-primary.5f6b8f6e6f46b87215ff.png",
+    "index.html": "/ollkom-frontend/index.html",
+    "main.70d4dee5.css.map": "/ollkom-frontend/static/css/main.70d4dee5.css.map",
+    "main.51805ef6.js.map": "/ollkom-frontend/static/js/main.51805ef6.js.map",
+    "453.b8e4c7f6.chunk.js.map": "/ollkom-frontend/static/js/453.b8e4c7f6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.70d4dee5.css",
+    "static/js/main.51805ef6.js"
+  ]
+}
